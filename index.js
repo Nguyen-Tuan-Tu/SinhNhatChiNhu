@@ -108,3 +108,24 @@ function createLight(a) {
         container.appendChild(div);
     }
 }
+// Hiển thị ảnh bánh sinh nhật sau 5 giây
+window.onload = function () {
+    setTimeout(() => {
+        let birthdayCake = document.createElement("img");
+        birthdayCake.src = "Screenshot 2024-12-14 203831.png"; // Đường dẫn đến ảnh bánh sinh nhật
+        birthdayCake.style.position = "absolute";
+        birthdayCake.style.bottom = "50px";
+        birthdayCake.style.right = "50px";
+        birthdayCake.style.width = "380px"; // Kích thước ảnh
+        birthdayCake.style.height = "auto";
+        birthdayCake.style.transition = "opacity 1s";
+        birthdayCake.style.opacity = "0";
+
+        document.body.appendChild(birthdayCake);
+
+        // Thêm hiệu ứng mờ dần vào
+        setTimeout(() => {
+            birthdayCake.style.opacity = "1";
+        }, 100);
+    }, 15000);
+};
