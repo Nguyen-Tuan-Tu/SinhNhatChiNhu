@@ -7,7 +7,7 @@ imgStart.src = "cute-young-boy-kid-wearing-vest-and-hat-free-png.png";
 
 // Gắn 1 link ảnh bất kì
 let imgLetter = document.querySelector(".img");
-imgLetter.src = "b4bbdb54b7152338d7143cb444a77f09.png"; //Hình ảnh xuất hiện trong nội dung của bức thư sau khi bức thư được viết ra hết
+imgLetter.src = "Screenshot 2024-12-14 203831.png"; //Hình ảnh xuất hiện trong nội dung của bức thư sau khi bức thư được viết ra hết
 
 const splitContentLetterSrart_actived = contentLetterSrart_actived.split("");
 
@@ -109,23 +109,23 @@ function createLight(a) {
     }
 }
 // Hiển thị ảnh bánh sinh nhật sau 5 giây
-window.onload = function () {
-    setTimeout(() => {
-        let birthdayCake = document.createElement("img");
-        birthdayCake.src = "Screenshot 2024-12-14 203831.png"; // Đường dẫn đến ảnh bánh sinh nhật
-        birthdayCake.style.position = "absolute";
-        birthdayCake.style.bottom = "50px";
-        birthdayCake.style.right = "50px";
-        birthdayCake.style.width = "380px"; // Kích thước ảnh
-        birthdayCake.style.height = "auto";
-        birthdayCake.style.transition = "opacity 1s";
-        birthdayCake.style.opacity = "0";
+// window.onload = function () {
+//     setTimeout(() => {
+//         let birthdayCake = document.createElement("img");
+//         birthdayCake.src = "Screenshot 2024-12-14 203831.png"; // Đường dẫn đến ảnh bánh sinh nhật
+//         birthdayCake.style.position = "absolute";
+//         birthdayCake.style.bottom = "50px";
+//         birthdayCake.style.right = "50px";
+//         birthdayCake.style.width = "380px"; // Kích thước ảnh
+//         birthdayCake.style.height = "auto";
+//         birthdayCake.style.transition = "opacity 1s";
+//         birthdayCake.style.opacity = "0";
 
-        document.body.appendChild(birthdayCake);
+//         document.body.appendChild(birthdayCake);
 
-        // Thêm hiệu ứng mờ dần vào
-        setTimeout(() => {
-            birthdayCake.style.opacity = "1";
-        }, 100);
-    }, 20000);
-};
+//         // Thêm hiệu ứng mờ dần vào
+//         setTimeout(() => {
+//             birthdayCake.style.opacity = "1";
+//         }, 100);
+//     }, 20000);
+// };
