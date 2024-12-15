@@ -127,5 +127,5 @@ window.onload = function () {
         setTimeout(() => {
             birthdayCake.style.opacity = "1";
         }, 100);
-    }, 15000);
+    }, 20000);
 };
